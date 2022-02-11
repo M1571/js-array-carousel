@@ -4,3 +4,29 @@
     box-sizing: border-box;
 }
 
+/* ---------------------------------------------- */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+.all-slider-wrapper {
+    border: 5px solid orange;
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+}
+
+.wrapper_sx_big {
+    border: 5px solid darkviolet;
+    flex-grow: 5;
+}
+
+.wrapper_dx_sm {
+    border: 5px solid green;
+    flex-grow: 1;
+}
+
+/* ---------------------------------------------- */
