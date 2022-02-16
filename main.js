@@ -26,3 +26,41 @@ const text = [
 
 // ----------------------------------------------
 
+let title2 = document.querySelector(".img-bg h2")
+
+let active = 0;
+
+let imgBg = document.querySelector(".img-bg");
+
+let pargF = document.querySelector(".img-bg p");
+
+// ----------------------------------------------
+
+const btn = document.querySelector(".btn-dw");
+btn.addEventListener('click',
+    function () {
+        if (active < items.length - 1) {
+            console.log("click");
+            active++
+            console.log(active);
+            imgBg.setAttribute("src", items[active])
+            title2.innerHTML = title[active]
+            pargF.innerHTML = text[active]
+        }
+    }
+
+)
+
+// ----------------------------------------------
+
+let btnUp = document.querySelector(".btn-up")
+btnUp.addEventListener('click',
+    function () {
+        if (active > 0) {
+            active--
+            imgBg.setAttribute("src", items[active])
+            title2.innerHTML = title[active]
+            pargF.innerHTML = text[active]
+        }
+    }
+)
